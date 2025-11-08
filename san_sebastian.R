@@ -21,7 +21,7 @@ ss_districts <- dist_ll[ss_dom,] |>
 
 mapview(ss_districts)
 
-dates <- c(start = "2024-10-01", end = "2025-10-01")
+dates <- c(start = "2024-03-04", end = "2024-03-04")
 od_dist <- spod_get(type = "od", zones = "dist", dates = dates)
 
 od <- od_dist |>
@@ -69,4 +69,5 @@ tm = bake_donuts(x,
 
 # The result is a tmap object, which can best be shown in "view mode"
 tmap_mode("view")
-tm
+
+tmap_save(tm, "san_sebastian.html")
