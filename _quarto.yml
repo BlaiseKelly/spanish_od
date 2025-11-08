@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs   
+
+website:
+  title: "spanish_od"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: san_sebastian.html
+        text: San Sebastian
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+
+
